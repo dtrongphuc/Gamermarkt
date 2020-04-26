@@ -1,8 +1,12 @@
+.main-banners {
+    background-color: $home-background-color;
+}
+
 #carousel-small {
     .item {
         a {
             img {
-                width: 264px;
+                width: 100%;
             }
         }
     }

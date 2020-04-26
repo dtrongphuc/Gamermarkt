@@ -1,5 +1,11 @@
 $white: #fff;
-$text-color: rgb(33, 37, 41);
+$text-color: #212529;
+$home-background-color: #F7F7FA;
+
+@font-face {
+    font-family: 'VolteRounded';
+    src: url(../../fonts/VolteRounded-Regular.otf);
+}
 
 @mixin dropDownHover {
     position: absolute;
@@ -18,6 +24,12 @@ $text-color: rgb(33, 37, 41);
         width: 100%;
         height: 20px;
     }
+}
+
+@mixin boxBg($name) {
+    background-image: url('../../images/decoration_#{$name}.svg');
+    background-position: top left;
+    background-repeat: no-repeat;
 }
 
 html {
@@ -53,6 +65,10 @@ p {
 input {
     border: none;
     outline: none;
+}
+
+.volteRounded {
+    font-family: 'VolteRounded';
 }
 
 .new {
@@ -158,7 +174,8 @@ input {
 }
 
 .main-seperator {
-    margin-top: 25px;
+    padding-top: 25px;
+    background-color: $home-background-color;
 }
 
 .seperator-bg {
@@ -166,5 +183,12 @@ input {
     background-size: 100%;
     width: 100%;
     height: 115px;
+}
 
+.blueBg {
+    @include boxBg('b');
+}
+
+.yellowBg {
+    @include boxBg(('y'));
 }
