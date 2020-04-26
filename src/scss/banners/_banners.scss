@@ -1,0 +1,19 @@
+#carousel-small {
+    .item {
+        a {
+            img {
+                width: 264px;
+            }
+        }
+    }
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #4DC7A0;
+}
+
+.banner-item-box {
+    padding: 20px;
+    border: 1px solid #D2D2D4;
+}
