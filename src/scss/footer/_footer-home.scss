@@ -1,0 +1,44 @@
+.main-footer {
+    padding: 20px 0 10px;
+    background-color: #F2F2F2;
+}
+
+.footer-list {
+    padding-bottom: 20px;
+    text-align: center;
+
+    &__heading {
+        font-size: 1.9rem;
+        font-weight: 350;
+        color: $text-color;
+        margin-bottom: 6px;
+    }
+
+    &__item {
+        &-link {
+            font-size: 1.5rem;
+            color: #898484;
+            line-height: 1.6;
+
+            &:hover {
+                color: #898484;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.text-black {
+    color: #000;
+}
+
+.footer__txt {
+    font-size: 1.5rem;
+    color: $text-color;
+    line-height: 1.8;
+}
+
+.footer__img {
+    margin-top: 12px;
+    width: 400px;
+}
