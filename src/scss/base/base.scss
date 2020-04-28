@@ -32,6 +32,13 @@ $home-background-color: #F7F7FA;
     background-repeat: no-repeat;
 }
 
+@mixin bg($color) {
+    background-image: url('../../images/#{$color}.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 html {
     font-size: 10px;
 }
@@ -190,5 +197,13 @@ input {
 }
 
 .yellowBg {
-    @include boxBg(('y'));
+    @include boxBg('y');
+}
+
+.bgBlue {
+    @include bg('blue');
+}
+
+.bgPink {
+    @include bg('pink');
 }

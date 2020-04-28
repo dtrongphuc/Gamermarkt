@@ -1,6 +1,6 @@
 
 $(document).ready(() => {
-    var dropDowns = document.querySelectorAll('.dropdown');
+    var dropDowns = document.querySelectorAll('.dropdown:not(.dropdown--lang)');
     dropDowns.forEach((dropDown) => {
         var dropDownMenu = dropDown.querySelector(':scope > .dropdown-content');
         dropDown.addEventListener('mouseover' ,() => {
