@@ -28,8 +28,10 @@
     }
 }
 
-.text-black {
-    color: #000;
+.icon-social__link {
+    & i {
+        color: #000;
+    }    
 }
 
 .footer__txt {
