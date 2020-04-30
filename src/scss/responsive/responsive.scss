@@ -1,3 +1,103 @@
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 768px) {
+    .header-foot {
+        flex-direction: column;
+
+        &__search-wrap {
+            width: 100%;
+            margin-top: 12px;
+        }
+        &__account {
+            margin-top: 12px;
+            width: 100%;
+        }
+    }
+
+    .header-navbar {
+        display: none;   
+        background-image: unset; 
+    }
+
+    .header-navbar--mobile {
+        display: block;
+        height: 100%;
+    }
+    
+    .header-navbar__browse {
+        height: 60px;
+        padding: 0 20px;
+        background-image: linear-gradient(to bottom,#49494A, #323232);
+
+        &-text {
+            color: #ECECEC;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        &-icon {
+            color: #ECECEC;
+            font-size: 4rem;
+            font-weight: 300;
+            cursor: pointer;
+
+            &:hover {
+                filter: brightness(70%);
+            }
+        }
+    }
+
+    .header-navbar__list {
+        flex-direction: column;
+        background-image: linear-gradient(to bottom, #4A4A4B, #313132);
+        padding: 16px 0;
+        transition: transform 200ms ease;
+    }
+
+    .header-navbar__item {
+        font-size: 1.8rem;
+        text-shadow: 0 0 1px rgb(207, 207, 207);
+
+        &::after {
+            display: none;
+        }
+    }
+
+    .about-big {
+        &__info {
+            padding: 40px 20px;
+            &-heading {
+                font-size: 4rem;
+            }
+            &-text {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .about-columns__item {
+        padding: 0 10px 16px;
+        border: none;
+
+        & i {
+            font-size: 5rem;
+        }
+
+        &-tit {
+            font-size: 1.6rem;
+            margin: 10px 0 0;
+        }
+
+        &-des {
+            font-size: 1.5rem;
+            font-weight: 150;
+            padding: 0;
+        }
+        &:nth-child(odd) {
+            border-right: 1px solid #D7D7D7;
+        }
+    }
+}
+
 @media (min-width: 1200px) { 
     .container {
         max-width: 1280px;    

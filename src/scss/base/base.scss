@@ -27,15 +27,11 @@ $home-background-color: #F7F7FA;
 }
 
 @mixin boxBg($name) {
-    background-image: url('../../images/decoration_#{$name}.svg');
-    background-position: top left;
-    background-repeat: no-repeat;
+    background: url('../../images/decoration_#{$name}.svg') top left no-repeat;
 }
 
 @mixin bg($color) {
-    background-image: url('../../images/#{$color}.svg');
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url('../../images/#{$color}.svg') center no-repeat;
     background-size: 100%;
 }
 
@@ -104,6 +100,12 @@ input {
     transition: display 0.35s ease;
 }
 
+.collapse.show {
+    -webkit-transition-delay: 3s;
+    transition-delay: 3s;
+    visibility: visible;
+}
+
 .dropdown-menu {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -113,6 +115,8 @@ input {
     @include dropDownHover();
     &--user {
         top: 130%;
+        left: 0;
+        right: 0;
     }
     &--nav {
         min-width: 300px;

@@ -39,7 +39,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="header-foot d-flex justify-content-between align-items-center">
+                <div class="header-foot p-5 d-flex justify-content-between align-items-center">
                     <a href="/" class="header-foot__logo-link">
                         <img src="./images/logo.png" width="200" alt="GamerMarkt" class="header-foot__logo-img">
                     </a>
@@ -62,99 +62,105 @@
                     </div>
                 </div>
             </div>
-            <nav class="header-navbar">
-                <ul class="header-navbar__list d-flex justify-content-center align-items-center">
-                    <li class="header-navbar__item dropdown">
-                        Riot Games
-                        <span class="new">NEW</span>
-                        <div class="dropdown-content dropdown-content--nav hide">
-                            <span class="square"></span>
-                            <div class="dropdown-header">
-                                <img src="./images/riot_games.png" alt="" class="header-navbar__dropdown-header__img">
+            <nav class="header-navbar header-navbar--mobile">
+                <div class="header-navbar__browse d-flex d-md-none justify-content-between align-items-center">
+                    <p class="header-navbar__browse-text">Browse Games</p>
+                    <i class="header-navbar__browse-icon fas fa-bars" type="button" data-toggle="collapse" data-target="#collapseNav" aria-expanded="false" aria-controls="collapseNav"></i>
+                </div>
+                <div id="collapseNav" class="collapse header-navbar__list--wrapper">
+                    <ul class="header-navbar__list justify-content-center align-items-center">
+                        <li class="header-navbar__item dropdown">
+                            Riot Games
+                            <span class="new">NEW</span>
+                            <div class="dropdown-content dropdown-content--nav hide">
+                                <span class="square"></span>
+                                <div class="dropdown-header">
+                                    <img src="./images/riot_games.png" alt="" class="header-navbar__dropdown-header__img">
+                                </div>
+                                <div class="dropdown-separate"></div>
+                                <a href="" class="dropdown-item dropdown-item--under-line">
+                                    <img src="./images/lol.png" class="header-navbar__dropdown-item__img" alt="">
+                                    LOL ALL Accounts
+                                </a>
+                                <a href="" class="dropdown-item dropdown-item--under-line">
+                                    <img src="./images/tft.png" class="header-navbar__dropdown-item__img" alt="">
+                                    TFT ALL Accounts
+                                </a>
+                                <a href="" class="dropdown-item dropdown-item--under-line">
+                                    <img src="./images/valorant.png" class="header-navbar__dropdown-item__img" alt="">
+                                    Valorant ALL Accounts 
+                                    <span class="new">NEW</span>
+                                </a>
+                                <div class="dropdown-separate"></div>
+                                <a href="" class="dropdown-item dropdown-item--under-line">Unranked Accounts</a>
+                                <div class="dropdown-separate"></div>
+                                <a href="" class="dropdown-item dropdown-item--under-line">
+                                    <img src="./images/rp.png" class="header-navbar__dropdown-item__img" alt="">
+                                    LOL Riot Points
+                                </a>
+                                <a href="" class="dropdown-item dropdown-item--under-line">
+                                    <img src="./images/vp.png" class="header-navbar__dropdown-item__img" alt="">
+                                    Valorant Points
+                                    <span class="new">new</span>
+                                </a>
+                                <a href="" class="dropdown-item dropdown-item--under-line">
+                                    <img src="./images/lorc.png" class="header-navbar__dropdown-item__img" alt="">
+                                    LoR Coins
+                                    <span class="new">new</span>
+                                </a>
                             </div>
-                            <div class="dropdown-separate"></div>
-                            <a href="" class="dropdown-item dropdown-item--under-line">
-                                <img src="./images/lol.png" class="header-navbar__dropdown-item__img" alt="">
-                                LOL ALL Accounts
-                            </a>
-                            <a href="" class="dropdown-item dropdown-item--under-line">
-                                <img src="./images/tft.png" class="header-navbar__dropdown-item__img" alt="">
-                                TFT ALL Accounts
-                            </a>
-                            <a href="" class="dropdown-item dropdown-item--under-line">
-                                <img src="./images/valorant.png" class="header-navbar__dropdown-item__img" alt="">
-                                Valorant ALL Accounts 
-                                <span class="new">NEW</span>
-                            </a>
-                            <div class="dropdown-separate"></div>
-                            <a href="" class="dropdown-item dropdown-item--under-line">Unranked Accounts</a>
-                            <div class="dropdown-separate"></div>
-                            <a href="" class="dropdown-item dropdown-item--under-line">
-                                <img src="./images/rp.png" class="header-navbar__dropdown-item__img" alt="">
-                                LOL Riot Points
-                            </a>
-                            <a href="" class="dropdown-item dropdown-item--under-line">
-                                <img src="./images/vp.png" class="header-navbar__dropdown-item__img" alt="">
-                                Valorant Points
-                                <span class="new">new</span>
-                            </a>
-                            <a href="" class="dropdown-item dropdown-item--under-line">
-                                <img src="./images/lorc.png" class="header-navbar__dropdown-item__img" alt="">
-                                LoR Coins
-                                <span class="new">new</span>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="header-navbar__item dropdown">
-                        Fortnite
-                        <div class="dropdown-content dropdown-content--nav hide">
-                            <span class="square"></span>
-                            <div class="dropdown-header">
-                                <img src="./images/fortnite.png" alt="" class="header-navbar__dropdown-header__img">
+                        </li>
+                        <li class="header-navbar__item dropdown">
+                            Fortnite
+                            <div class="dropdown-content dropdown-content--nav hide">
+                                <span class="square"></span>
+                                <div class="dropdown-header">
+                                    <img src="./images/fortnite.png" alt="" class="header-navbar__dropdown-header__img">
+                                </div>
+                                <div class="dropdown-separate"></div>
+                                <a href="" class="dropdown-item dropdown-item--under-line">
+                                    <img src="./images/lol.png" class="header-navbar__dropdown-item__img" alt="">
+                                    Fortnite ALL Accounts
+                                </a>
                             </div>
-                            <div class="dropdown-separate"></div>
-                            <a href="" class="dropdown-item dropdown-item--under-line">
-                                <img src="./images/lol.png" class="header-navbar__dropdown-item__img" alt="">
-                                Fortnite ALL Accounts
-                            </a>
-                        </div>
-                    </li>
-                    <li class="header-navbar__item dropdown">
-                        Supercell Games
-                        <div class="dropdown-content dropdown-content--nav hide">
-                            <span class="square"></span>
-                            <div class="dropdown-header">
-                                <img src="./images/supercell.png" alt="" class="header-navbar__dropdown-header__img">
+                        </li>
+                        <li class="header-navbar__item dropdown">
+                            Supercell Games
+                            <div class="dropdown-content dropdown-content--nav hide">
+                                <span class="square"></span>
+                                <div class="dropdown-header">
+                                    <img src="./images/supercell.png" alt="" class="header-navbar__dropdown-header__img">
+                                </div>
+                                <div class="dropdown-separate"></div>
+                                <a href="" class="dropdown-item dropdown-item--under-line">
+                                    <img src="./images/clash-of-clans.png" class="header-navbar__dropdown-item__img" title="Clash of Clans" alt="clash-of-clans">
+                                    Clash of Clans
+                                </a>
+                                <a href="" class="dropdown-item dropdown-item--under-line">
+                                    <img src="./images/clash-royale.png" class="header-navbar__dropdown-item__img" title="Clash of Royale" alt="Clash of Royale">
+                                    Clash Royale
+                                </a>
+                                <a href="" class="dropdown-item dropdown-item--under-line">
+                                    <img src="./images/brawl-stars.png" class="header-navbar__dropdown-item__img" title="Brawl Stars" alt="Brawl Stars">
+                                    Brawl Stars 
+                                </a>
                             </div>
-                            <div class="dropdown-separate"></div>
-                            <a href="" class="dropdown-item dropdown-item--under-line">
-                                <img src="./images/clash-of-clans.png" class="header-navbar__dropdown-item__img" title="Clash of Clans" alt="clash-of-clans">
-                                Clash of Clans
-                            </a>
-                            <a href="" class="dropdown-item dropdown-item--under-line">
-                                <img src="./images/clash-royale.png" class="header-navbar__dropdown-item__img" title="Clash of Royale" alt="Clash of Royale">
-                                Clash Royale
-                            </a>
-                            <a href="" class="dropdown-item dropdown-item--under-line">
-                                <img src="./images/brawl-stars.png" class="header-navbar__dropdown-item__img" title="Brawl Stars" alt="Brawl Stars">
-                                Brawl Stars 
-                            </a>
-                        </div>
-                    </li>
-                    <li class="header-navbar__item dropdown">
-                        Steam
-                        <div class="dropdown-content dropdown-content--nav hide">
-                            <span class="square"></span>
-                            <div class="dropdown-header">
-                                <img src="./images/steam.png" alt="" class="header-navbar__dropdown-header__img">
+                        </li>
+                        <li class="header-navbar__item dropdown">
+                            Steam
+                            <div class="dropdown-content dropdown-content--nav hide">
+                                <span class="square"></span>
+                                <div class="dropdown-header">
+                                    <img src="./images/steam.png" alt="" class="header-navbar__dropdown-header__img">
+                                </div>
+                                <div class="dropdown-separate"></div>
+                                <a href="" class="dropdown-item dropdown-item--under-line">
+                                    Steam ALL Accounts
+                                </a>
                             </div>
-                            <div class="dropdown-separate"></div>
-                            <a href="" class="dropdown-item dropdown-item--under-line">
-                                Steam ALL Accounts
-                            </a>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                    </ul>
+                </div>
             </nav>
             <div class="modal" tabindex="-1" role="dialog" aria-labelledby="mMainHeader" aria-hidden="true">
         </header>
@@ -223,10 +229,11 @@
                 <div class="seperator-bg"></div>
             </div>
         </div>
+        <!-- END OF SEPERATOR -->
         <main class="main-home">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-md-6 col-xl-4 my-md-5 my-2">
                         <div class="main__info-box blueBg">
                             <div class="main__info-box__icon">
                                 <i class="fas fa-hand-holding-usd"></i>
@@ -237,7 +244,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-md-6 col-xl-4 my-md-5 my-2">
                         <div class="main__info-box blueBg">
                             <div class="main__info-box__icon">
                                 <i class="fas fa-user-astronaut"></i>
@@ -248,7 +255,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-md-6 col-xl-4 my-md-5 my-2">
                         <div class="main__info-box yellowBg">
                             <div class="main__info-box__icon">
                                 <i class="fas fa-chart-line"></i>
@@ -259,7 +266,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-md-6 col-xl-4 my-md-5 my-2">
                         <div class="main__info-box blueBg">
                             <div class="main__info-box__icon">
                                 <i class="far fa-credit-card"></i>
@@ -270,7 +277,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-md-6 col-xl-4 my-md-5 my-2">
                         <div class="main__info-box blueBg">
                             <div class="main__info-box__icon">
                                 <i class="fas fa-landmark"></i>
@@ -281,7 +288,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-xl-4">
+                    <div class="col-12 col-md-6 col-xl-4 my-md-5 my-2">
                         <div class="main__info-box yellowBg">
                             <div class="main__info-box__icon">
                                 <i class="far fa-money-bill-alt"></i>
@@ -353,7 +360,7 @@
         <footer class="main-footer">
             <div class="container">
                 <div class="row">
-                    <ul class="footer-list col-md-3">
+                    <ul class="footer-list col-6 col-md-3">
                         <p class="footer-list__heading">GamerMarkt</p>
                         <li class="footer-list__item">
                             <a href="" class="footer-list__item-link">Contact</a>
@@ -365,7 +372,7 @@
                             <a href="" class="footer-list__item-link">About Us</a>
                         </li>
                     </ul>
-                    <ul class="footer-list col-md-3">
+                    <ul class="footer-list col-6 col-md-3">
                         <p class="footer-list__heading">Info</p>
                         <li class="footer-list__item">
                             <a href="" class="footer-list__item-link">I Want to Buy Account</a>
@@ -374,7 +381,7 @@
                             <a href="" class="footer-list__item-link">I Want to Sell Account</a>
                         </li>
                     </ul>
-                    <ul class="footer-list col-md-3">
+                    <ul class="footer-list col-6 col-md-3">
                         <p class="footer-list__heading">Help</p>
                         <li class="footer-list__item">
                             <a href="" class="footer-list__item-link">Frequenly Asked Question</a>
@@ -386,7 +393,7 @@
                             <a href="" class="footer-list__item-link">Adding Balance</a>
                         </li>
                     </ul>
-                    <ul class="footer-list col-md-3">
+                    <ul class="footer-list col-6 col-md-3">
                         <p class="footer-list__heading">Membership</p>
                         <li class="footer-list__item">
                             <a href="" class="footer-list__item-link">User Agreement</a>

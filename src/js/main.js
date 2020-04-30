@@ -41,12 +41,12 @@ $(document).ready(() => {
         autoplayHoverPause:true,
         responsive: {
             0: {
-                items: 1
-            },
-            540: {
                 items: 2
             },
-            1140: {
+            576: {
+                items: 2
+            },
+            768: {
                 items: 3
             },
             1141: {
@@ -54,4 +54,20 @@ $(document).ready(() => {
             }
         }
     });
+
+    $('.collapse').collapse('hide');
+
+    
+    var isSm = window.matchMedia("(max-width: 768px)");
+    collapseBars(isSm);
+    function collapseBars(isSm) {
+        if(isSm.matches) {
+            $('#collapseNav').collapse('hide');
+        } else {
+            $('#collapseNav').collapse('show');
+        }
+    }
+
+    isSm.addListener(collapseBars);
+
 });
