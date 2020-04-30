@@ -69,13 +69,6 @@
 
         &-reset {
             align-self: flex-end;
-            color: var(--primary);
-            text-transform: capitalize;
-            line-height: 1.6;
-
-            &:hover {
-                text-decoration: underline;
-            }
         }
 
         &-submit-btn {
@@ -92,10 +85,19 @@
         line-height: 1.6;
         font-size: 1.6rem;
         padding: 20px 0;
-        & a {
-            color: var(--primary);
+
+        &-register {
             font-weight: bold;
         }
     }
     
+    &__link {
+        color: var(--primary);
+        text-transform: capitalize;
+        line-height: 1.6;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }

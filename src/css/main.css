@@ -417,12 +417,7 @@ input {
       padding: 8px 12px;
       border-radius: 4px; }
     .main-login__form-reset {
-      align-self: flex-end;
-      color: var(--primary);
-      text-transform: capitalize;
-      line-height: 1.6; }
-      .main-login__form-reset:hover {
-        text-decoration: underline; }
+      align-self: flex-end; }
     .main-login__form-submit-btn {
       width: 390px;
       height: 50px;
@@ -434,9 +429,14 @@ input {
     line-height: 1.6;
     font-size: 1.6rem;
     padding: 20px 0; }
-    .main-login__tail a {
-      color: var(--primary);
+    .main-login__tail-register {
       font-weight: bold; }
+  .main-login__link {
+    color: var(--primary);
+    text-transform: capitalize;
+    line-height: 1.6; }
+    .main-login__link:hover {
+      text-decoration: underline; }
 
 .main-footer {
   padding: 20px 0 10px;
