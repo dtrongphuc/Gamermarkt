@@ -3,3 +3,4 @@ node_modules
 firebase.json
 .firebase/hosting.c3Jj.cache
 src/404.html
+gulpfile.js
