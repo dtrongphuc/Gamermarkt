@@ -200,6 +200,10 @@ input {
     @include boxBg('b');
 }
 
+.greenBg {
+    @include boxBg('g');
+}
+
 .yellowBg {
     @include boxBg('y');
 }
