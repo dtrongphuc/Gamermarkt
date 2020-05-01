@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/icon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./vendors/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="./vendors/owlcarousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="./css/main.css">
     <title>Buy Game Accounts for Sale - Fast and Cheap - GamerMarkt</title>
 </head>
@@ -56,8 +55,8 @@
                             <span class="square"></span>
                             <div class="dropdown-header">You haven't logged in.</div>
                             <div class="dropdown-separate"></div>
-                            <a href="" class="dropdown-item dropdown-item--under-line">Login</a>
-                            <a href="" class="dropdown-item dropdown-item--under-line">Register</a>
+                            <a href="./login.html" class="dropdown-item dropdown-item--under-line">Login</a>
+                            <a href="./register.html" class="dropdown-item dropdown-item--under-line">Register</a>
                         </div>
                     </div>
                 </div>
@@ -177,14 +176,20 @@
             </button>
             <div class="main-login__seperator">or</div>
             <form action="" method="post" class="main-login__form">
-                <input type="email" placeholder="Email adress" class="main-login__form-input form-control my-3">
-                <input type="password" placeholder="Password" class="main-login__form-input form-control my-3">
+                <div class="form-group">
+                    <input id="email" type="email" placeholder="Email adress" class="main-login__form-input form-control my-3">
+                    <label for="email" class="sr-only">Email adress</label>
+                </div>
+                <div class="form-group">
+                    <input id="password" type="password" placeholder="Password" class="main-login__form-input form-control my-3">
+                    <label for="password" class="sr-only">Password</label>
+                </div>
                 <a href="" class="main-login__link main-login__form-reset">Reset Password</a>
                 <button type="submit" class="btn btn-success main-login__form-submit-btn">Log in</button>
             </form>
             <p class="main-login__tail">
                 Don't you have an account?
-                <a class="main-login__link main-login__tail-register" href="">Register</a>
+                <a class="main-login__link main-login__tail-register" href="./register.html">Register</a>
             </p>
         </main>
         <div class="about-columns">
@@ -291,8 +296,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <!-- <script src="./vendors/jquery.min.js"></script> -->
-    <script src="./vendors/owlcarousel/owl.carousel.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/access.js"></script>
 </body>
 </html>
